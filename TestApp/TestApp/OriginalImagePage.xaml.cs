@@ -25,9 +25,9 @@ namespace TestApp
             _stopwatch = new Stopwatch();
             _stopwatch.Start();
 
-            const string imageUrl = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31";
+            const string imageUrl = "https://www.bing.com/sa/simg/hpc27_2x.png";
             // Simulate load lots of different images.
-            GridView.ItemsSource = Enumerable.Range(0, 500).Select(temp => imageUrl + "&rand=" + Guid.NewGuid()).ToList();
+            GridView.ItemsSource = Enumerable.Range(0, 500).Select(temp => imageUrl + "?rand=" + Guid.NewGuid()).ToList();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
